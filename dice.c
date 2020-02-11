@@ -16,7 +16,6 @@ int main() {
 		exit(0);
 	}
 	printf("\n \n");
-
 	for (answer; answer == 1;) {
 		srand(time(NULL));
 		ran = (rand() % 6) + 1;

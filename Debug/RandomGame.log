@@ -1,0 +1,4 @@
+﻿  RspGame.c
+c:\users\admin\source\repos\2020year_git\2020year_git\randomgame\randomgame\rspgame.c(35): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\admin\source\repos\2020year_git\2020year_git\randomgame\randomgame\rspgame.c(8): warning C4101: 'random' :참조되지 않은 지역 변수입니다.
+  RandomGame.vcxproj -> C:\Users\admin\source\repos\2020year_git\2020year_git\RandomGame\Debug\RandomGame.exe
