@@ -2,8 +2,8 @@
 #include<stdlib.h>
 #include<time.h>
 int main() {
-	int player;
-	int com;
+	int player = 0;
+	int com = 0;
 	int random;
 	int answer = 0;
 	printf("가위 바위 보!! \n");
@@ -27,6 +27,25 @@ int main() {
 	printf("아니라면 패배... \n");
 	printf("\n ------------------ \n");
 	printf("\n \n");
-	
-	printf("player == > ");
+	for (answer; answer == 1;) {
+		printf("player == > ");
+		scanf_s("%d", &player);
+		srand(time(NULL));
+		com = (rand() % 3) + 1;
+		printf("computer == > %d\n",com);
+		if (player == com) {
+			printf("비겼습니다!!");
+		}
+		else if (player == 1 && com == 3 || player == 2 && com == 1 || player == 3 && com == 2) {
+			printf("이겼습니다!");
+		}
+		 else if (player == 1 && com == 2 || player == 2 && com == 3 || player == 3 && com == 1) {
+			printf("졌습니다...");
+		}
+		printf("\n");
+		printf("1. restart 2.exit ==>");
+		scanf_s("%d", &answer);
+		printf("\n");
+	}
+	return 0;
 }

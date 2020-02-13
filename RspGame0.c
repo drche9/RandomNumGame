@@ -9,7 +9,6 @@ int main() {
 	printf("가위 바위 보!! \n");
 	printf("1. start , 2. stop ==> ");
 	scanf_s("%d", &answer);
-
 	if (answer == 1) {
 		printf("start \n");
 	}
